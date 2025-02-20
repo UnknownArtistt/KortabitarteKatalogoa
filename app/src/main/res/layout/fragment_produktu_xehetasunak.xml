@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProduktuXehetasunak">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="254dp"
+            android:layout_height="254dp"
+            android:layout_marginStart="78dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="79dp"
+            android:layout_marginBottom="47dp"
+            android:src="@drawable/kortabitartelogo"
+            app:layout_constraintBottom_toTopOf="@+id/nombrePrd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ekoizlePrd"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="81dp"
+            android:layout_marginBottom="10dp"
+            android:text="TextView"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/descPrd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/descPrd"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="81dp"
+            android:layout_marginBottom="9dp"
+            android:text="TextView"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/prezPrd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/prezPrd"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="231dp"
+            android:layout_marginBottom="29dp"
+            android:text="TextView"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/shareBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/shareBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="78dp"
+            android:layout_marginEnd="183dp"
+            android:layout_marginBottom="97dp"
+            android:backgroundTint="#E91E63"
+            android:text="Partekatu"
+            app:cornerRadius="5dp"
+            app:icon="@android:drawable/ic_menu_send"
+            app:iconTint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/nombrePrd"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="81dp"
+            android:layout_marginBottom="11dp"
+            android:text="TextView"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/ekoizlePrd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

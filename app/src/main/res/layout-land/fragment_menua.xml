@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menua">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="301dp"
+            android:layout_height="238dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginBottom="69dp"
+            android:src="@drawable/bod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/kontuaBtn"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="99dp"
+            android:layout_marginBottom="38dp"
+            android:text="Kontuaren Ezarpenak"
+            app:icon="@android:drawable/ic_menu_sort_by_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/katalogoBtn"
+            android:layout_width="190dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="83dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#E91E63"
+            android:text="Katalogoa Ikusi"
+            app:cornerRadius="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/kontuaBtn"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/locationBtn"
+            android:layout_width="65dp"
+            android:layout_height="49dp"
+            android:layout_marginEnd="237dp"
+            android:layout_marginBottom="42dp"
+            app:cornerRadius="5dp"
+            app:icon="@android:drawable/ic_dialog_info"
+            app:layout_constraintBottom_toTopOf="@+id/textView10"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="11dp"
+            android:text="1932an sortutako enpresa familiar bat gara"
+            app:layout_constraintBottom_toTopOf="@+id/textView12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="83dp"
+            android:layout_marginBottom="11dp"
+            android:text="kortabitarteupategiak@gmail.com"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/locationBtn"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="238dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="10dp"
+            android:text="Gure katalogoa ikusi nahi?"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/katalogoBtn"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/ongiEtorriText"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="19dp"
+            android:text="Ongi etorri, "
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

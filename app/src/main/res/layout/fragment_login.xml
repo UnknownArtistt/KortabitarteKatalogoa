@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="249dp"
+            android:layout_height="324dp"
+            android:layout_marginStart="81dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="81dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/kortabitartelogo"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/showBtn"
+            android:layout_width="66dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="75dp"
+            android:backgroundTint="#009688"
+            app:cornerRadius="5dp"
+            app:icon="@android:drawable/ic_menu_view"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/signUpBtn"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/passwordText"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginBottom="75dp"
+            android:ems="10"
+            android:hint="Pasahitza"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="97dp"
+            android:layout_marginBottom="15dp"
+            android:text=" Erabiltzaile Izena:"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/usernameText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="97dp"
+            android:layout_marginBottom="15dp"
+            android:text=" Pasahitza:"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/passwordText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/usernameText"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="97dp"
+            android:layout_marginBottom="28dp"
+            android:ems="10"
+            android:hint="Erabiltzaile Izena"
+            android:inputType="text"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="49dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#E91E63"
+            android:text="Saioa Hasi"
+            app:cornerRadius="5dp"
+            app:icon="@android:drawable/ic_media_ff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/signUpBtn"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#E91E63"
+            android:text="Erregistratu"
+            app:cornerRadius="5dp"
+            app:icon="@android:drawable/ic_menu_save"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
